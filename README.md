@@ -4,6 +4,10 @@
 
 ### This is my react-boilerplate
 
-#### Setup npm install npm run build npm start
+#### Setup npm install
+
+#### npm run build
+
+#### npm start
 
 https://www.freecodecamp.org/news/how-to-build-your-own-react-boilerplate-2f8cbbeb9b3f/
