@@ -9,6 +9,7 @@ const client = {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist/public"),
   },
+  module: moduleObj,
 };
 
 const server = {
@@ -20,5 +21,18 @@ const server = {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
   },
+  module: moduleObj,
 };
 module.exports = [client, server];
+
+const path = require("path");
+
+const moduleObj = {
+  loaders: [
+    {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loaders: ["babel-loader"],
+    },
+  ],
+};
