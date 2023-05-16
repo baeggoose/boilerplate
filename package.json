@@ -41,7 +41,10 @@
     "enzyme-adapter-react-16": "^1.15.7",
     "html-webpack-plugin": "^5.5.1",
     "jest": {
-      "setupTestFrameworkScriptFile": "./src/enzyme.setup.js"
+      "setupTestFrameworkScriptFile": "./src/enzyme.setup.js",
+      "setupFiles": [
+        "raf/polyfill"
+      ]
     },
     "webpack-node-externals": "^3.0.0"
   }
